@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        header{
+            margin-bottom: 40px;
+        }
+        header h2{
+            color: #ffffffb0;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .overlay{
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div id="carousel-exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="2500" class="carousel-item active">
+                <img src="https://www.vegaweb.com.br/wp-content/uploads/vega-web-novo-site.jpg">
+                <div class="carousel-caption">
+                    <div class="overlay">
+                    <h2><strong>Desenvolvimento web</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+                <img src="https://anhanguera.s3.amazonaws.com/wp-content/uploads/2021/01/post_thumbnail-878f2090f624aabd3130d15dcc4a67fa.jpg">
+                <div class="carousel-caption">
+                    <div class="overlay">
+                    <h2><strong>Mercado de trabalho</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div data-bs-interval="2500" class="carousel-item">
+                <img src="https://lh3.googleusercontent.com/435MIyMcf6sGhqR8e8TQtjgiyXcX5F8yFAu9GFLKBe5MoOgZGsFPp4m5XjaDtFq85KuYYVrAGIj464kQuZdr2ukAfm1DQdFeskAcQeJalucMUOPNS2Ty9fmlnMSDyNVN_W-W3DeN">
+                <div class="carousel-caption">
+                    <div class="overlay">
+                    <h2><strong>Desenvolvedor</strong></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" class="active" data-bs-target="#carousel-exemplo" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+</header>
+
+<div class="container-card p-3">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-bg-info">
+                <div class="card-header">
+                    <i>Desenvolvimento web</i>
+                </div>
+                <img src="https://blog.ebaconline.com.br/blog/wp-content/uploads/2023/08/image2-7.png">
+                <div class="card-body">
+                    <h4 class="card-title"><strong>Mercado de trabalho</strong></h4>
+                    <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni error, quos asperiores animi sapiente soluta possimus eius nisi consequatur molestiae vel ducimus repudiandae nulla fugiat dolores atque, natus quidem quod?
+                    </p>
+                    <a href="#" class="btn btn-primary">Leia mais...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-bg-info">
+                <div class="card-header">
+                    <i>Desenvolvimento web</i>
+                </div>
+                <img src="https://matriculas.estacio.br/blog/wp-content/uploads/2023/12/area-de-ti-faculdade-remuneracao-4.jpg">
+                <div class="card-body">
+                    <h4 class="card-title"><strong>Salários</strong></h4>
+                    <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni error, quos asperiores animi sapiente soluta possimus eius nisi consequatur molestiae vel ducimus repudiandae nulla fugiat dolores atque, natus quidem quod?
+                    </p>
+                    <a href="#" class="btn btn-primary">Leia mais...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-bg-info">
+                <div class="card-header">
+                    <i>Desenvolvimento web</i>
+                </div>
+                <img src="https://www.ezex.com.br/img/gco-images/219-pt-br.jpg">
+                <div class="card-body">
+                    <h4 class="card-title"><strong>O que aprender</strong></h4>
+                    <p class="card-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni error, quos asperiores animi sapiente soluta possimus eius nisi consequatur molestiae vel ducimus repudiandae nulla fugiat dolores atque, natus quidem quod?
+                    </p>
+                    <a href="#" class="btn btn-primary">Leia mais...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
